@@ -64,7 +64,7 @@
     </template>
 
     <footer>
-        <div v-if="app.session.active" class="forgot-pw">
+        <div class="forgot-pw">
             <a :href="`${url}user/password_reset/`" class="cf" target="_blank">{{$t('forgot your password?')}}</a>
         </div>
         <div class="help-message cf">{{$t('need help?')}}<br/> <span class="cf">{{$t('click on the')}}</span><i @click="setOverlay('about')"><icon name="help"/></i>{{$t('icon')}}</div>
